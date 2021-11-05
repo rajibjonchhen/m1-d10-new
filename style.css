@@ -1,9 +1,26 @@
 body{
-    background-color: rgb(80, 78, 78);
+    background-color: rgb(255, 255, 255);
     max-width:90%;
     margin: 0 5%;
 }
 
 h1{
     text-align: center;
+}
+
+a{
+    color: rgb(128, 85, 85);
+}
+
+table{
+    border: 3px solid grey;
+    border-radius: 20px;
+}
+
+img{
+    width:100px;
+}
+
+p p{
+    margin:15px;
 }

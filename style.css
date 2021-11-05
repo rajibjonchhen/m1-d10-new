@@ -15,12 +15,34 @@ a{
 table{
     border: 3px solid grey;
     border-radius: 20px;
+    
+    text-align:center;
+    color: white;
+    border: 5px dotted red; 
+}
+td{
+    background-color: rgb(80, 58, 58);
+    width:100px;
+    border: 1px solid green;
+    border-top:5px dotted red; 
 }
 
+tr{
+    
+    color: 15px dotted red;
+}
+th{
+    color: rgb(252, 247, 247);
+    background-color: rgb(66, 8, 8);
+    height: 50px;
+}
 img{
     width:100px;
 }
 
-p p{
+p{
     margin:15px;
+    font-size: 20px;
+
 }
+

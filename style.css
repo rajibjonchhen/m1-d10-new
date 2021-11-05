@@ -1,3 +1,9 @@
 body{
     background-color: rgb(80, 78, 78);
+    max-width:90%;
+    margin: 0 5%;
+}
+
+h1{
+    text-align: center;
 }

@@ -1,4 +1,5 @@
-let x = 'John'
+const domExe = function() {
+ let x = 'John'
 let y = 'Doe'
 console.log('John<>Doe')
 
@@ -85,7 +86,31 @@ const arrayBigSum = function(array1,array2){
     }
 
     console.log(arrayBigSum(arrayOfArray[1],arrayOfArray[2]))
+}
+const changeRow = function(){
+    tableData = document.querySelectorAll('td')
+        tableData.forEach((td) => {
+            td.innerText = 'rajib'
+        });
+    }
+    changeRow()
 
+    const changeHeading = function(){
+    let heading  = document.querySelector('h1')
+    heading.innerText += '    -- from here Heading Changed from JS'
+    }
 
-    let container = document.getElementById('container')
-    let tableData = document.get
+    changeHeading()
+    const createTable = function(){
+        let  table = document.querySelector('table')
+        for(let j = 0; j < 2; j++){ 
+            let row = document.createElement('tr')
+        for(let i = 0; i < 5; i++){
+            const td = document.createElement('td')
+            td.innerText = i + 1
+            row.appendChild(td)
+        }
+        table.appendChild(row)
+    }
+    }
+    createTable()

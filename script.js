@@ -86,6 +86,21 @@ const arrayBigSum = function(array1,array2){
 
     console.log(arrayBigSum(arrayOfArray[1],arrayOfArray[2]))
 
+    
+    const readData = function(){
+        let container = document.getElementById('container')
+        let tableData = document.getElementsByTagName('td')
+        let data
+        for(let i = 0; i < tableData.length; i++){
+           data = tableData[i].readData
+            console.log(data)
+        }
+    }
 
-    let container = document.getElementById('container')
-    let tableData = document.get
+    const changeHeading = function(){
+        let heading = document.querySelector('h1')
+        heading.innerText = 'Rajib'
+    }
+   changeHeading()
+
+   

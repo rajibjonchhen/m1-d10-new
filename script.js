@@ -52,3 +52,36 @@ for(let i = 0; i < 10; i++){
     arrayOfArray.push(array)
 }
 console.log(arrayOfArray)
+
+
+const checkLongest = function(array1,array2){
+if(array1.length > array2.length)
+    return ('the first array is longer'+array1)
+else
+    return ('The second array is longer' + array2)
+}
+
+a =['13','32','34','34','436','78','35','fw','234','av']
+b =['a','s','d','e','3','3','4','5','f','2','5','5','a']
+console.log(checkLongest(a,b))
+
+
+
+const arrayBigSum = function(array1,array2){
+    let array1sum = 0
+    let array2sum = 0
+    for(let i = 0; i < array1.length; i++)
+    array1sum += array1[i]
+    for(let i = 0; i < array1.length; i++)
+     array2sum += array2[i]
+    if(array1sum > array2sum)
+        return ('The sum of the first array is bigger which is\t' + array1sum)
+        else if(array1sum < array2sum)
+        return ('The sum of the second array is bigger which is\t' + array2sum)
+        else if(array1sum === array2sum)
+        return ('There sum are equal\t'+ array1sum)
+        else 
+        return('Not a number')
+    }
+
+    console.log(arrayBigSum(arrayOfArray[1],arrayOfArray[2]))

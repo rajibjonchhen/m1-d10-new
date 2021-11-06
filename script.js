@@ -85,3 +85,7 @@ const arrayBigSum = function(array1,array2){
     }
 
     console.log(arrayBigSum(arrayOfArray[1],arrayOfArray[2]))
+
+
+    let container = document.getElementById('container')
+    let tableData = document.get

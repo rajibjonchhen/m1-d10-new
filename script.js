@@ -104,3 +104,37 @@ const arrayBigSum = function(array1,array2){
    changeHeading()
 
    
+   const addRow = function(){
+let table = document.getElementById('table')
+let row = table.insertRow[5]
+let cell1 = row.insertCell[0]
+let cell2 = row.insertCell[1]
+let cell3 = row.insertCell[2]
+let cell4 = row.insertCell[3]
+let cell5 = row.insertCell[4]
+
+cell1.innerHTML = 'added cell 1'
+cell2.innerHTML = 'added cell 2'
+cell3.innerHTML = 'added cell 3'
+cell4.innerHTML = 'added cell 4'
+cell5.innerHTML = 'added cell 5'
+}
+addRow()
+
+ const myFunction = function() {
+    var table = document.getElementById("myTable");
+    var row = table.insertRow(3);
+    var cell1 = row.insertCell(0);
+    var cell2 = row.insertCell(1);
+    cell1.innerHTML = "NEW CELL1";
+    cell2.innerHTML = "NEW CELL2";
+    var cell3 = row.insertCell(0);
+    var cell4 = row.insertCell(1);
+    cell3.innerHTML = "NEW CELL1";
+    cell4.innerHTML = "NEW CELL1";
+    var cell5= row.insertCell(1);
+    cell5.innerHTML = "NEW CELL1";
+    
+  }
+
+  myFunction()

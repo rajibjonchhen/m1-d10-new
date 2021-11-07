@@ -8,16 +8,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<header>1
-    <h1>Web Desi1gning</h1>
-</header>1
-    <ol>1
-        <li>Day 1</li>
-        <li>Day 2</li>
-        <li>Day 3</li>
-        <li>Day 4</li>
-        <li>Day 5</li>
-    </ol>
+    <div id="container">
+    <div id="container1">
+<header>
+    <h1 onclick = 'deleteCellButton(event)'>Web Designing</h1>
+</header>
+   
+    <div>
+        <button id = 'button1' onclick='hideTable(event)'>Hide table</button>
+    </div>
     <table>
         <tr>
             <th>col1</th>
@@ -27,7 +26,7 @@
         </tr>
         
         <tr> 
-            <td> 2-1</td>  
+            <td onclick = 'colorButton()'> 2-1</td>  
             <td> <a href="https://discord.com/channels/730327743874596915/902131936607232020"> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Unofficial_JavaScript_logo_2.svg/1024px-Unofficial_JavaScript_logo_2.svg.png" alt="html logo"></a></td> 
              <td> 2-3</td> 
               <td> 2-4</td>  
@@ -57,6 +56,15 @@
     </table>
 
     <hr>
+</div>
+    <div id = 'container2'>
+    <ol>
+        <li><a href="https://github.com/rajibjonchhen/m1-d10-new/pull/1"> link list1</a></li>
+        <li><a href="https://github.com/rajibjonchhen/m1-d10-new/pull/1"> link list2</a></li>
+        <li><a href="https://github.com/rajibjonchhen/m1-d10-new/pull/1"> link list3</a></li>
+        <li><a href="https://github.com/rajibjonchhen/m1-d10-new/pull/1"> link list4</a></li>
+        <li><a href="https://github.com/rajibjonchhen/m1-d10-new/pull/1"> link list5</a></li>
+    </ol>
     <p>
         <p>
             first Hello this is a nested paragraph made according to the HTML exercise 8 Create a container with a nested paragraph and a nested unordered list
@@ -95,7 +103,8 @@
             <li>2 list in nested</li>
         </ul>
     </ul>
-
+</div>
+</div>
     <footer>
         This page is copy right to Strive School Oct 21 - web
     </footer>

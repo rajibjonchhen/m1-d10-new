@@ -2,6 +2,17 @@ body{
     background-color: rgb(255, 255, 255);
     max-width:90%;
     margin: 0 5%;
+   
+  
+}
+#container{
+    display: flex;
+    flex: 50% ;
+    justify-content: center;
+
+}
+#container1, #container2{
+   width: 50%;
 }
 
 h1{
@@ -13,7 +24,7 @@ a{
 }
 
 table{
-    border: 3px solid grey;
+   
     border-radius: 20px;
     margin: 0 auto;
     text-align:center;
@@ -23,19 +34,33 @@ table{
 td{
     background-color: rgb(80, 58, 58);
     width:100px;
-    height: 100px;
+    height: 50px;
     border: 1px solid green;
     border-top:5px dotted red; 
 }
+tr:nth-child(1) th:first-child{
+    border-top-left-radius:15px;
+}
+tr:nth-child(1) th:last-child{
+    border-top-right-radius:15px;
+}
+tr:nth-child(5) td:first-child{
+    border-bottom-left-radius:15px;
+}
+
+tr:nth-child(5) td:last-child{
+    border-bottom-right-radius:15px;
+}
 
 tr{
-    
-    color: 15px dotted red;
+    background-color: 15px dotted red;
 }
+
 th{
     color: rgb(252, 247, 247);
     background-color: rgb(66, 8, 8);
-    height: 50px;
+    height: 25px;
+    
 }
 img{
     width:100px;
@@ -46,4 +71,18 @@ p{
     font-size: 20px;
 
 }
+
+.test{
+background-color: rgb(4, 4, 26);
+color:white;
+}
+
+.red-bg{
+background-color: rgb(240, 8, 8);
+
+}
+li{
+    margin: 5px;
+}
+
 

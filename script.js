@@ -87,10 +87,12 @@ const arrayBigSum = function(array1,array2){
 
     console.log(arrayBigSum(arrayOfArray[1],arrayOfArray[2]))
 }
+
+let container = document.getElementById('container')
 const changeRow = function(){
     tableData = document.querySelectorAll('td')
         tableData.forEach((td) => {
-            td.innerText = 'rajib'
+            td.innerText = 1
         });
     }
     changeRow()
@@ -103,14 +105,129 @@ const changeRow = function(){
     changeHeading()
     const createTable = function(){
         let  table = document.querySelector('table')
-        for(let j = 0; j < 2; j++){ 
+        for(let j = 1; j <= 3; j++){ 
             let row = document.createElement('tr')
-        for(let i = 0; i < 5; i++){
+        for(let i = 1; i <= 5; i++){
             const td = document.createElement('td')
-            td.innerText = i + 1
+            td.innerText =  i*1 + j*10
             row.appendChild(td)
         }
+        row.classList.add('test')
         table.appendChild(row)
     }
     }
     createTable()
+
+const redLink = function(){
+    let links = document.querySelectorAll('a')
+    links.forEach((link) => {
+        link.classList.add('red-bg')
+        link.style.color = 'white'
+        link.style.textDecoration = 'none'
+        
+    })
+}
+
+redLink()
+
+const editList = function(){
+    //adding new list in ul
+    let ul = document.getElementsByTagName('ul')
+    let li = document.createElement('li')
+    li.innerText = 'new list created'
+    ul[0].appendChild(li)
+    //changing the content of a list
+    let list = document.getElementsByTagName('li')
+     list[3].innerText = 'just trying to change this from javascript'
+
+     //empty a list removed ul 1 at the bottom of the page
+  
+   ul[1].innerHTML =''
+
+} 
+editList()
+
+window.onload = function(){
+console.log('the page is loaded')
+}
+
+const linkHover = function(){
+    let links = document.getElementsByTagName('a')
+    for(let link of links){
+
+    }
+}
+
+
+const hideButton = function(eventData){
+    let button = document.querySelector('button1')
+    if(eventData){
+        button.addEventListener('click',hideTable())
+    }
+}
+
+const hideTable = function(){
+    let table = document.querySelector('table')
+    if(table.style.display !=='none')
+      table.style.display ='none'
+      else
+      table.style.display = 'inline-block'
+}
+
+
+const tableSum = function(){
+    let td = document.querySelectorAll('td')
+    let sum = 0;
+    for(let i = 0; i < td.length; i++){
+            sum += Number(td[i].innerText)
+    }
+    td[0].innerText = sum + '- SUM OF ALL CELL'
+}
+tableSum()
+
+
+const colorButton = function(eventdata){
+    let td = document.querySelectorAll('td')
+    for(let i = 0; i < td.length; i++){
+        td[i].addEventListener = ('click',changeColor(i))
+    }
+}
+
+const changeColor = function(change){
+    let td = document.querySelectorAll('td')
+    let a= td[change]
+    a.style.backgroundColor = 'red'
+}
+
+const addButton = function(){
+    let table = document.querySelector('table')
+    let tr = document.createElement('tr')
+    for(let i = 0; i < 5; i++){
+       let  td = document.createElement("td")
+       td.innerHTML = `<button> delete </button>`
+       tr.appendChild(td)
+    }
+    table.appendChild(tr)
+}
+addButton()
+
+
+const deleteCellButton = function(eventData){
+    let heading = document.querySelector('h1')
+    heading.addEventListener = ('click', deleteLast())
+}
+
+const deleteLast = function(){
+    let h1 = document.querySelector('h1')
+    let  heading = h1.innerText
+    let splitH1 = heading.split('')
+    splitH1.pop()
+    let newHeading = splitH1.join ('')
+    h1.innerText = newHeading
+   
+
+}
+
+const deleteData = function(){
+    let td =  document.querySelectorAll('td')
+}
